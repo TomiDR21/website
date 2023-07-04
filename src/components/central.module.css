@@ -1,0 +1,268 @@
+.centralContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  width: 80%;
+  height: 800px;
+}
+
+/* LEFT SIDE */
+
+.left {
+  border-radius: 18px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-right: 40px;
+  opacity: 0.9;
+}
+
+.left img {
+  position: relative;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.left h3,
+.left h2 {
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  position: relative;
+  top: 170px;
+}
+
+.leftText {
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.techs {
+  position: relative;
+  right: 7px;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.techs img {
+  position: relative;
+  top: 20px;
+}
+
+.techs .git {
+  height: 80px;
+  width: 80px;
+  transition: ease-in-out 0.1s;
+}
+
+.techs .link {
+  height: 40px;
+  width: 40px;
+  transition: ease-in-out 0.1s;
+}
+
+.techs .link:hover,
+.techs .gmail:hover,
+.techs .git:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left ul li {
+  color: rgb(141, 146, 168);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.left ul li:nth-child(5) {
+  color: rgb(29, 85, 169);
+}
+
+/* RIGHT SIDE */
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+  width: 70%;
+}
+
+/* NAV */
+
+.navContainer {
+  background-color: rgb(0, 0, 0);
+  border-radius: 18px;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.navContainer div {
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(50, 145, 200);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navContainer img {
+  border-radius: 5px;
+  width: 90px;
+  height: 80px;
+}
+
+.navContainer img:hover {
+  background-color: rgb(12, 196, 110);
+  opacity: 1;
+}
+
+.navContainer div:hover {
+  cursor: pointer;
+  color: rgb(197, 206, 222);
+}
+
+/* PROJECTS */
+
+.projectsContainer {
+  background-color: rgb(0, 0, 0);
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 18px;
+  opacity: 0.9;
+}
+
+.projectsContainer a {
+  text-decoration: none;
+  color: white;
+}
+
+.project1,
+  .project2,
+  .project3,
+  .project4
+  /* .project5,
+  .project6 */ {
+  background-image: rgb(0, 0, 0);
+
+  border-radius: 14px;
+  width: 220px;
+  height: 330px;
+  transition: transform 0.1s ease;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* CV */
+
+.cv {
+  background-color: rgb(0, 0, 0);
+  height: 85%;
+  width: 100%;
+  border-radius: 18px;
+  opacity: 0.9;
+}
+
+/* ANIMATIONS */
+
+.contacts img:hover {
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+.contacts .gmailContainer,
+.linkedinContainer,
+.githubContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts .gmailContainer .imgText {
+  visibility: hidden;
+
+  color: white;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: opacity 0.3s ease;
+}
+
+.contacts .githubContainer .imgText {
+  visibility: hidden;
+  color: white;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50.7%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: opacity 0.3s ease;
+}
+
+.contacts .linkedinContainer .imgText {
+  visibility: hidden;
+  color: white;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contacts .imgContainer:hover + .imgText,
+.contacts .imgText:hover {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+}
